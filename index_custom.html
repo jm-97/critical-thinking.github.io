@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Include JavaScript for color modes -->
+    <script src="./assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Update the 'content' attribute to reflect the actual content description -->
+    <meta name="description" content="your_description_goes_here">
+
+    <!-- Modify the 'content' attribute to include appropriate keywords -->
+    <meta name="keywords" content="your_keywords_goes_here">
+
+    <meta name="author" content="tigmatemplate">
+    <meta name="generator" content="Bootstrap">
+
+    <!-- Change the text within the <title> tag to match the webpage's content -->
+    <title> your_title_goes_here </title>
+
+    <!-- 
+        Set the website's favicon and Apple touch icon using the files in the assets/logo folder. You can change these files to your own icons by replacing them with the same names and sizes.
+
+        Be careful if you change the site.webmanifest file, as you need to update the src attribute of the icons array to match the new path of your icon files. Otherwise, your icons may not display correctly on some devices. 
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
+    <link rel="manifest" href="./assets/logo/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
+    <meta property="og:title" content="your_title_goes_here">
+    <meta property="og:description" content="your_description_goes_here">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
+    <meta property="og:image" content="your_absolute_image_url_goes_here">
+    <!-- Update with the absolute URL of the content like: https://example.com/index.html -->
+    <meta property="og:url" content="your_absolute_content_url_goes_here">
+    <!-- Update with the type of object you’re sharing. (e.g., article, website, etc.) -->
+    <meta property="og:type" content="website">
+    <!-- Defines the content language -->
+    <meta property="og:locale" content="en_US">
+
+
+    <!-- X/Twitter Card Meta Tags for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Update with your X/Twitter handle -->
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
+    <meta name="twitter:title" content="your_title_goes_here">
+    <meta name="twitter:description" content="your_description_goes_here">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
+    <meta name="twitter:image" content="your_absolute_image_url_goes_here">
+
+    <!-- 
+        The following line specifies the canonical URL for this page.
+        Replace your_canonical_url_goes_here with the actual canonical URL if needed like: https://example.com/index.html
+        Or just remove it!!!!
+    -->
+    <link rel="canonical" href="your_canonical_url_goes_here">
+    <link href="assets/home/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- loader-wrapper -->
+    <div class="loader-wrapper">
+        <div class="spinner-grow text-primary p-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <header class="position-absolute z-3 mt-3 w-100" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-xl" aria-label="Offcanvas navbar large">
+            <div class="container py-1">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./assets/logo/logo.png" height="40" alt="logo">
+                </a>
+
+                <div class="dropdown ms-3 order-last">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                        <symbol id="check2" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </symbol>
+                        <symbol id="circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                        </symbol>
+                        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            <path
+                                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                        </symbol>
+                        <symbol id="sun-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </symbol>
+                    </svg>
+
+                    <button class="btn btn-primary text-white btn-sm rounded dropdown-toggle d-flex align-items-center"
+                        id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                        aria-label="Toggle theme (auto)">
+                        <svg fill="currentColor" class="bi my-1 theme-icon-active" width="1em" height="1em">
+                            <use href="#circle-half"></use>
+                        </svg>
+                        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                    </button>
+
+                    <ul class="p-1 dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 rounded-3 shadow bg-body-tertiary"
+                        style="--bs-dropdown-min-width: 9rem;" aria-labelledby="bd-theme-text">
+
+                        <li style="color: var(--bs-tertiary-bg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="mt-n1 d-inline-block position-absolute top-0 end-0 translate-middle"
+                                viewBox="0 0 16 16">
+                                <path class="carret-dropdown-path"
+                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                        </li>
+
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1"
+                                data-bs-theme-value="light" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em">
+                                    <use href="#sun-fill"></use>
+                                </svg>
+                                Light
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em"
+                                    height="1em">
+                                    <use href="#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button" class="my-1 dropdown-item d-flex align-items-center rounded-1"
+                                data-bs-theme-value="dark" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em">
+                                    <use href="#moon-stars-fill"></use>
+                                </svg>
+                                Dark
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em"
+                                    height="1em">
+                                    <use href="#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1 active"
+                                data-bs-theme-value="auto" aria-pressed="true">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em">
+                                    <use href="#circle-half"></use>
+                                </svg>
+                                Auto
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em"
+                                    height="1em">
+                                    <use href="#check2"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4" tabindex="-1"
+                    id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header" style="padding: 2rem 2rem 1.5rem 2rem;">
+                        <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
+                            <a class="navbar-brand" href="javascript:;">
+                                <img src="./assets/logo/logo.png" height="32" alt="logo">
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2">
+                            <li class="nav-item ms-xl-auto">
+                                <a href="./index.html"
+                                    class="px-3 text-white bg-primary-hover nav-link rounded-3 text-base leading-6 fw-semibold"
+                                    aria-current="page">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./pricing.html"
+                                    class="px-3 text-white bg-primary-hover nav-link rounded-3 text-base leading-6 fw-semibold">
+                                    Pricing
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="javascript:;"
+                                    class="px-3 text-white bg-primary-hover nav-link rounded-3 text-base leading-6 fw-semibold">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn w-100 text-start dropdown-toggle px-3 text-white bg-primary-hover nav-link rounded-3 text-base leading-6 fw-semibold"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 text-sm shadow bg-white"
+                                        style="--bs-dropdown-min-width: 9rem;">
+                                        <li class="d-none d-xl-block" style="color: var(--bs-white);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor"
+                                                class="mt-n1 d-inline-block position-absolute top-0 end-0 translate-middle"
+                                                viewBox="0 0 16 16">
+                                                <path class="carret-dropdown-path"
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-dark bg-primary-hover text-white-hover py-2 text-base leading-6 fw-semibold"
+                                                href="javascript:;">
+                                                Blog page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-dark bg-primary-hover text-white-hover py-2 text-base leading-6 fw-semibold"
+                                                href="javascript:;">
+                                                Blog post
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-dark bg-primary-hover text-white-hover py-2 text-base leading-6 fw-semibold"
+                                                href="javascript:;"> Author page
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item ms-xl-auto">
+                                <a href="javascript:;"
+                                    class="px-3 text-white bg-primary nav-link rounded-3 text-base leading-6 fw-semibold text-center">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header body -->
+    <div
+        class="overflow-hidden py-9 py-xl-10 position-relative rounded-bottom-3 rounded-sm-4 rounded-xl-5 m-0 m-sm-2 m-xl-3 shadow">
+        <img src="./assets/img/bg/bg1.jpg" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover"
+            alt="Meeting">
+
+        <div class="position-absolute z-n1 top-0 h-100 w-100 bg-dark"
+            style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
+        </div>
+
+        <div class="position-absolute z-0 top-0 h-100 w-100">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h1 class="m-0 mt-7 text-white tracking-tight text-6xl fw-bold" data-aos-delay="0" data-aos="fade"
+                        data-aos-duration="3000">
+                        Bioplastica 
+                    </h1>
+                    <p class="m-0 mt-4 text-white text-lg leading-8" data-aos-delay="100" data-aos="fade"
+                        data-aos-duration="3000">
+                        Un nuovo colore che definisce il futuro
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+    
+          <img src="assets/home/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+    
+          <div class="container">
+            <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
+            <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="courses.html" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+    
+        </section><!-- /Hero Section -->
+    
+        <!-- About Section -->
+        <section id="about" class="about section">
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/home/assets/img/about.jpg" class="img-fluid" alt="">
+              </div>
+    
+              <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                <h3>Voluptatem dignissimos provident quasi corporis</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </ul>
+                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /About Section -->
+    
+        <!-- Counts Section -->
+        <section id="counts" class="section counts light-background">
+    
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Students</p>
+                </div>
+              </div><!-- End Stats Item -->
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Courses</p>
+                </div>
+              </div><!-- End Stats Item -->
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Events</p>
+                </div>
+              </div><!-- End Stats Item -->
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Trainers</p>
+                </div>
+              </div><!-- End Stats Item -->
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Counts Section -->
+    
+        <!-- Why Us Section -->
+        <section id="why-us" class="section why-us">
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-box">
+                  <h3>Why Choose Our Products?</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                  </p>
+                  <div class="text-center">
+                    <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Why Box -->
+    
+              <div class="col-lg-8 d-flex align-items-stretch">
+                <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+    
+                  <div class="col-xl-4">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-clipboard-data"></i>
+                      <h4>Corporis voluptates officia eiusmod</h4>
+                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-gem"></i>
+                      <h4>Ullamco laboris ladore pan</h4>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-inboxes"></i>
+                      <h4>Labore consequatur incidid dolore</h4>
+                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+    
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Why Us Section -->
+    
+
+
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses section">
+    
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Courses</h2>
+            <p>Popular Courses</p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="course-item">
+                  <img src="assets/home/assets/img/course-1.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <p class="category">Web Development</p>
+                      <p class="price">$169</p>
+                    </div>
+    
+                    <h3><a href="course-details.html">Website Design</a></h3>
+                    <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                    <div class="trainer d-flex justify-content-between align-items-center">
+                      <div class="trainer-profile d-flex align-items-center">
+                        <img src="assets/home/assets/img/trainers/trainer-1-2.jpg" class="img-fluid" alt="">
+                        <a href="" class="trainer-link">Antonio</a>
+                      </div>
+                      <div class="trainer-rank d-flex align-items-center">
+                        <i class="bi bi-person user-icon"></i>&nbsp;50
+                        &nbsp;&nbsp;
+                        <i class="bi bi-heart heart-icon"></i>&nbsp;65
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="course-item">
+                  <img src="assets/home/assets/img/course-2.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <p class="category">Marketing</p>
+                      <p class="price">$250</p>
+                    </div>
+    
+                    <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                    <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                    <div class="trainer d-flex justify-content-between align-items-center">
+                      <div class="trainer-profile d-flex align-items-center">
+                        <img src="assets/home/assets/img/trainers/trainer-2-2.jpg" class="img-fluid" alt="">
+                        <a href="" class="trainer-link">Lana</a>
+                      </div>
+                      <div class="trainer-rank d-flex align-items-center">
+                        <i class="bi bi-person user-icon"></i>&nbsp;35
+                        &nbsp;&nbsp;
+                        <i class="bi bi-heart heart-icon"></i>&nbsp;42
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                <div class="course-item">
+                  <img src="assets/home/assets/img/course-3.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <p class="category">Content</p>
+                      <p class="price">$180</p>
+                    </div>
+    
+                    <h3><a href="course-details.html">Copywriting</a></h3>
+                    <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                    <div class="trainer d-flex justify-content-between align-items-center">
+                      <div class="trainer-profile d-flex align-items-center">
+                        <img src="assets/home/assets/img/trainers/trainer-3-2.jpg" class="img-fluid" alt="">
+                        <a href="" class="trainer-link">Brandon</a>
+                      </div>
+                      <div class="trainer-rank d-flex align-items-center">
+                        <i class="bi bi-person user-icon"></i>&nbsp;20
+                        &nbsp;&nbsp;
+                        <i class="bi bi-heart heart-icon"></i>&nbsp;85
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Courses Section -->
+    
+        <!-- Trainers Index Section -->
+        <section id="trainers-index" class="section trainers-index">
+    
+          <div class="container">
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <img src="assets/home/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4>Walter White</h4>
+                    <span>Web Development</span>
+                    <p>
+                      Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                    </p>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+    
+              <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                  <img src="assets/home/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4>Sarah Jhinson</h4>
+                    <span>Marketing</span>
+                    <p>
+                      Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                    </p>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+    
+              <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="member">
+                  <img src="assets/home/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4>William Anderson</h4>
+                    <span>Content</span>
+                    <p>
+                      Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+                    </p>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Trainers Index Section -->
+    
+      </main>
+
+
+
+    <!-- Footer -->
+    <footer
+        class="overflow-hidden py-6 py-sm-7 py-xl-8 bg-body-tertiary rounded-top-3 rounded-sm-4 rounded-xl-5 m-0 m-sm-2 m-xl-3 shadow">
+        <div class="container">
+            <div class="row gy-5 g-sm-5">
+                <div class="col-12 col-xl-4">
+                    <a href="javascript:;"
+                        class="mb-3 link-body-emphasis d-flex align-items-center text-decoration-none">
+                        <img src="./assets/logo/logo.png" height="24" alt="logo" loading="lazy">
+                    </a>
+
+                    <p class="mt-4 mb-4 pt-2 text-body-secondary leading-6 text-sm">
+                        Creating a more positive world by building graceful structures.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 col-xl-2">
+                    <h3 class="text-body-emphasis leading-6 text-sm fw-semibold">How it works</h3>
+                    <ul class="mt-4 nav flex-column">
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;"
+                                class="p-0 text-body-secondary nav-link leading-6 text-sm">Overview</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;"
+                                class="p-0 text-body-secondary nav-link leading-6 text-sm">Pricing</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Service
+                                Areas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-xl-2">
+                    <h3 class="text-body-emphasis leading-6 text-sm fw-semibold">Resources</h3>
+                    <ul class="mt-4 nav flex-column">
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Customer
+                                Stories</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Knowledge
+                                Base</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-xl-2">
+                    <h3 class="text-body-emphasis leading-6 text-sm fw-semibold">Products</h3>
+                    <ul class="mt-4 nav flex-column">
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Corporate
+                                Partners</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Secure
+                                Identity</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Legal
+                                Help</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-xl-2">
+                    <h3 class="text-body-emphasis leading-6 text-sm fw-semibold">Company</h3>
+                    <ul class="mt-4 nav flex-column">
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">About
+                                Us</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;"
+                                class="p-0 text-body-secondary nav-link leading-6 text-sm">Careers</a>
+                        </li>
+                        <li class="mb-3 nav-item">
+                            <a href="javascript:;" class="p-0 text-body-secondary nav-link leading-6 text-sm">Terms of
+                                Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="mt-6 mb-0 text-body-emphasis opacity-10">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="order-last order-md-first mt-5 text-body-secondary leading-6 text-sm">
+                    ©
+                    <span class="current-year"></span>
+                    Tigma Template, All rights reserved. Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+                </div>
+
+                <div class="order-first order-md-last mt-5">
+                    <!-- twitter icon -->
+                    <a href="javascript:;" class="btn border bg-body-secondary-hover social me-3 p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- intagram icon -->
+                    <a href="javascript:;" class="btn border bg-body-secondary-hover social me-3 p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- facebook icon -->
+                    <a href="javascript:;" class="btn border bg-body-secondary-hover social me-3 p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 320 512">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- linkedIn icon -->
+                    <a href="javascript:;" class="btn border bg-body-secondary-hover social me-3 p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- youtube icon -->
+                    <a href="javascript:;" class="btn border bg-body-secondary-hover social p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Back to top button -->
+    <button type="button"
+        class="btn btn-primary btn-back-to-top rounded-circle justify-content-center align-items-center p-2 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+
+    <!-- Bootstrap JavaScript: Bundle with Popper -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/aos/aos.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>
